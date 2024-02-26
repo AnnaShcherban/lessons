@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3</title>
+  </head>
+  <body>
+    <h1>Задача 1</h1>
+    <p>
+      З клавіатури вводяться імена двох дітей та кількість у них цукерок.
+      Вивести не екран ім’я тієї дитини, у якої кількість цукерок є більшою, або
+      вивести, що кількість однакова.
+    </p>
+    <script>
+      let firstName = prompt("Імя", "Аня")
+      let numberFirstCandies = parseInt(prompt("Кількість цукерок", "3"))
+      let secondName = prompt("Імя", "Руслан")
+      let numberSecondCandies = parseInt(prompt("Кількість цукерок", "3"))
+
+      // Обчислення та вивід результату
+      if (numberFirstCandies === numberSecondCandies)
+        document.write(`Maють однакову кількість цукерок`)
+    </script>
+  </body>
+</html>

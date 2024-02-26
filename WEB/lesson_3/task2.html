@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3</title>
+  </head>
+  <body>
+    <h1>Задача 2</h1>
+    <p>
+      З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не
+      вистачає то відмовляємо у покупці, інакше, якщо ще залишаються гроші, то
+      пропонуємо купити лотерею за 4 грн.
+    </p>
+    <script>
+      let priceProduct = parseFloat(prompt("Ціна товару", "0"))
+      let sumMoney = parseFloat(prompt("Сума квоти", "0"))
+      const sumLottery = 4
+
+      //
+      let totalSum = sumMoney - priceProduct
+      if (priceProduct > sumMoney) document.write(`У вас не вистачає грошей`)
+      else sumMoney <= priceProduct
+      document.write(`Пропоную купити вам лотерею за 4 грн`)
+    </script>
+  </body>
+</html>

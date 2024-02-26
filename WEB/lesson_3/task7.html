@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3</title>
+  </head>
+  <body>
+    <p>
+      З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься
+    </p>
+    <script>
+      const numerDayMonth = parseInt(prompt(`Введіть номер місяця`))
+      let result
+
+      //проводимо розрахунки
+      if (numerDayMonth <= 3) result = "Зима"
+      else if (numerDayMonth <= 6) result = "Весна"
+      else if (numerDayMonth <= 9) result = "Літо"
+      else if (numerDayMonth <= 12) result = "Осінь"
+      else document.write(`Некоректний номер,введіть від 1 до 12`)
+      document.write(result)
+    </script>
+  </body>
+</html>
